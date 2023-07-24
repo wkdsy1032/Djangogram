@@ -48,7 +48,7 @@ LOCALE_PATHS = [str(BASE_DIR / "locale")]
 DATABASES = {
     "default": env.db(
         "DATABASE_URL",
-        default="postgres://localhost/djangogram",
+        default="postgres://postgres:postgresql@localhost:5432/djangogram",
     ),
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
